@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Catalogue</h1>
+
+        <!-- Search, Sort, and Pagination Controls -->
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by title..." oninput="filterBooks(this.value)">
+            <select id="sort" onchange="sortBooks(this.value)">
+                <option value="">Sort By</option>
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+        </div>
+
+        
+        <div id="book-list"></div>
+
+        
+        <div id="pagination" class="pagination-controls"></div>
+
+        
+        <div id="loader" class="loader" style="display: none;">Loading...</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

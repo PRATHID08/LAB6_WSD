@@ -1,0 +1,97 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Make sure the height is 100% of the viewport */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('Book1.jpg'); /* Replace with the path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #fff; /* Ensures text is readable against the background */
+    display: flex;
+    flex-direction: column; /* Allows the footer to stay at the bottom */
+    justify-content: space-between; /* Ensures space between header, main content, and footer */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background to keep text readable */
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a light hover effect */
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Allows main content to grow and take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better readability */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+   
